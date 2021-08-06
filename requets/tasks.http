@@ -1,0 +1,36 @@
+@base_url = http://localhost:3000/tasks
+
+# Obtener todas las tareas
+GET {{base_url}}
+
+# Obtener una tarea segun el id
+###
+GET {{base_url}}/1
+
+# Obtener la cantidad de tareas
+###
+GET {{base_url}}/count
+
+# Crear una tarea
+###
+POST {{base_url}}
+Content-Type: application/json 
+
+{
+    "title": "EJEMPLO2",
+    "description": "EJEMPLOSSS2"
+}
+
+# Eliminar una tarea por id
+###
+DELETE {{base_url}}/14
+
+# actualiza una tarea
+###
+PUT {{base_url}}/11
+Content-Type: application/json 
+
+{
+    "title": "React native",
+    "description": "Aprender react native lo mas rapido"
+}
